@@ -1,0 +1,97 @@
+{
+  "test_cases": [
+    {
+      "id": "case_01_strong_catalyst_smallcap",
+      "category": "small_cap_long_watch",
+      "ticker": "CELC",
+      "company": "Celcuity Inc.",
+      "headline": "Celcuity delivers positive Phase 3 VIKTORIA trial data for PI3K/mTOR inhibitor targeting HR+/HER2- metastatic breast cancer; FDA approval anticipated in 2026",
+      "price_move": "Stock up over 660% since end of July 2026, trading around $99.30 as of late September 2026",
+      "expected_classification": "STRONG CATALYST - Potential Long Watch",
+      "reasoning_notes": "Binding clinical trial data, clear FDA pathway, not vague or promotional. Financial impact tied to real regulatory milestone.",
+      "source": {
+        "title": "3 stocks you'll wish you bought before 2026",
+        "url": "https://www.barchart.com/story/news/36464516/3-stocks-youll-wish-you-bought-before-2026",
+        "publisher": "Barchart"
+      }
+    },
+    {
+      "id": "case_02_dilution_offering",
+      "category": "dilution_risk_flag",
+      "ticker": "UPXI",
+      "company": "Upexi, Inc.",
+      "headline": "Upexi announces registered direct offering of 6,337,000 shares plus warrants at $1.17 per share",
+      "price_move": "Offering closed February 9, 2026; gross proceeds approximately $7.4 million",
+      "expected_classification": "Dilution event - flag 'Recent dilution: Yes'; not itself a bullish catalyst even though framed as a capital raise",
+      "reasoning_notes": "Tests whether the system correctly treats a financing/dilution filing as a risk flag rather than a positive catalyst.",
+      "source": {
+        "title": "UPEXI, INC. - Form 8-K - FY2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1775194/000147793226000712/upxi_8k.htm",
+        "publisher": "SEC EDGAR"
+      }
+    },
+    {
+      "id": "case_03_strong_catalyst_largecap",
+      "category": "large_cap_long_watch",
+      "ticker": "NBIS",
+      "company": "Nebius",
+      "headline": "Nebius sells more than $1 billion of computing power to Reflection AI under a multi-year deal",
+      "price_move": "Jumped 17.3% on August 12, 2026",
+      "expected_classification": "STRONG CATALYST - Potential Long Watch",
+      "reasoning_notes": "Material contract with disclosed dollar value ($1B+), multi-year term, from a credible large-cap AI infrastructure company. Clear revenue impact.",
+      "source": {
+        "title": "Top 10 Artificial Intelligence Penny Stocks To Watch in 2026",
+        "url": "https://stockstotrade.com/ai-penny-stocks/",
+        "publisher": "StocksToTrade"
+      }
+    },
+    {
+      "id": "case_04_mixed_earnings_miss_but_up",
+      "category": "mixed_unclear",
+      "ticker": "RCAT",
+      "company": "Red Cat Holdings",
+      "headline": "Red Cat reports Q2 earnings miss (-$0.26/share vs -$0.17 expected) but stock rises ~22% as management reaffirms full-year revenue guidance of $150M-$180M, followed by multiyear NFL Washington Commanders partnership",
+      "price_move": "Stock surged approximately 22% on August 6, 2026 despite the earnings miss",
+      "expected_classification": "MIXED / UNCLEAR - Requires manual review",
+      "reasoning_notes": "Tests whether the system can handle a case where the headline number (earnings miss) looks negative but the market reaction and underlying reason (guidance reaffirmation, new partnership) are positive. A naive keyword-based system might misclassify this as a negative catalyst. Also worth noting: China placed Red Cat on its export control list around this period, adding a real risk factor the system should surface, not ignore.",
+      "source": {
+        "title": "Top 10 Artificial Intelligence Penny Stocks To Watch in 2026",
+        "url": "https://stockstotrade.com/ai-penny-stocks/",
+        "publisher": "StocksToTrade"
+      }
+    },
+    {
+      "id": "case_05_weak_puffy_catalyst_us_smallcap",
+      "category": "small_cap_short_watch",
+      "ticker": null,
+      "company": null,
+      "headline": null,
+      "price_move": null,
+      "expected_classification": null,
+      "reasoning_notes": "No verified real U.S.-listed example found via web search in the time available. Do not fill this with invented news. Source from Benzinga Pro archives, your own trade history, or SEC EDGAR full-text search once you have access — look for a small-cap that popped double digits on a vague 'strategic partnership' or 'letter of intent' press release with no disclosed financial terms.",
+      "source": null
+    },
+    {
+      "id": "case_06_no_fresh_catalyst",
+      "category": "no_fresh_catalyst_safeguard",
+      "ticker": null,
+      "company": null,
+      "headline": null,
+      "price_move": null,
+      "expected_classification": null,
+      "reasoning_notes": "No verified real example found. This is the hardest case to source after the fact since it requires a documented instance of a stock moving with no accompanying news, or an old/unrelated article resurfacing against a ticker. Recommend building this from your own scanner logs going forward, or pulling a real 'unusual volume, no news' alert from Trade Ideas once you're monitoring live.",
+      "source": null
+    },
+    {
+      "id": "case_07_duplicate_press_release_two_wires",
+      "category": "dedup_test",
+      "ticker": null,
+      "company": null,
+      "headline": null,
+      "price_move": null,
+      "expected_classification": null,
+      "reasoning_notes": "No verified real example found confirming the identical release on two distinct wires with timestamps. Recommend sourcing this directly: pick any company's press release day and check whether the same release appears on both GlobeNewswire/Business Wire/PR Newswire and the company's own IR page, which is common and should be easy to find live rather than retroactively via search.",
+      "source": null
+    }
+  ]
+}

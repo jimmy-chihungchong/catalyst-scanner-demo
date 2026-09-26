@@ -1,0 +1,14 @@
+# Core
+pydantic>=2.7          # structured-output schema + validation for AI responses
+python-dotenv>=1.0     # .env config loading
+openai>=1.40           # OpenAI-compatible client -> LM Studio (localhost:1234)
+anthropic>=0.40        # Anthropic provider for quality comparison
+tzdata>=2024.1         # IANA tz database on Windows (America/Los_Angeles, America/New_York)
+
+# Dev / tests
+pytest>=8.0
+
+# UI
+streamlit>=1.40        # Google Finance-style dashboard (app.py)
+plotly>=5.20
+yfinance>=0.2.40       # DEMO-ONLY price data (unofficial); production -> Alpaca market data
